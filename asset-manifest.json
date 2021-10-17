@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/fauzanahmad11.github.io/static/css/main.65ae2369.chunk.css",
-    "main.js": "/fauzanahmad11.github.io/static/js/main.29190e63.chunk.js",
-    "main.js.map": "/fauzanahmad11.github.io/static/js/main.29190e63.chunk.js.map",
+    "main.css": "/fauzanahmad11.github.io/static/css/main.a6c48744.chunk.css",
+    "main.js": "/fauzanahmad11.github.io/static/js/main.dd138205.chunk.js",
+    "main.js.map": "/fauzanahmad11.github.io/static/js/main.dd138205.chunk.js.map",
     "runtime-main.js": "/fauzanahmad11.github.io/static/js/runtime-main.d64d4921.js",
     "runtime-main.js.map": "/fauzanahmad11.github.io/static/js/runtime-main.d64d4921.js.map",
     "static/css/2.c1256375.chunk.css": "/fauzanahmad11.github.io/static/css/2.c1256375.chunk.css",
@@ -12,14 +12,14 @@
     "static/js/3.debc96b4.chunk.js.map": "/fauzanahmad11.github.io/static/js/3.debc96b4.chunk.js.map",
     "index.html": "/fauzanahmad11.github.io/index.html",
     "static/css/2.c1256375.chunk.css.map": "/fauzanahmad11.github.io/static/css/2.c1256375.chunk.css.map",
-    "static/css/main.65ae2369.chunk.css.map": "/fauzanahmad11.github.io/static/css/main.65ae2369.chunk.css.map",
+    "static/css/main.a6c48744.chunk.css.map": "/fauzanahmad11.github.io/static/css/main.a6c48744.chunk.css.map",
     "static/js/2.38dc357b.chunk.js.LICENSE.txt": "/fauzanahmad11.github.io/static/js/2.38dc357b.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.d64d4921.js",
     "static/css/2.c1256375.chunk.css",
     "static/js/2.38dc357b.chunk.js",
-    "static/css/main.65ae2369.chunk.css",
-    "static/js/main.29190e63.chunk.js"
+    "static/css/main.a6c48744.chunk.css",
+    "static/js/main.dd138205.chunk.js"
   ]
 }
