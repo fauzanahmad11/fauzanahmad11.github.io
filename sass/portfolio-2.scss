@@ -109,12 +109,11 @@ body.light{
         border-radius: .35em;
     }
     .navbar-toggler.custome{
-        position: relative;
-        display: flex;
-        justify-content: end;
-        align-items: end;
-        flex-direction: column;
-        border: unset;
+        display: flex !important;
+        justify-content: end !important;
+        align-items: end !important;
+        flex-direction: column !important;
+        border: unset !important;
         &:focus{
             outline: unset;
             text-decoration: none;
@@ -139,9 +138,6 @@ body.light{
             width: 25px;
         }
         .navbar-toggler-icon-custome-1{
-            // position: absolute;
-            top: 0;
-            right: 0;
             display: block;
             width: 32px;
             height: 3px;
@@ -366,10 +362,9 @@ body.light{
         }
         &::after{
             content: '';
-            background-image: url("../img/light-blue-circle.png");
+            background-image: url("../img/dotsmany.png");
             background-repeat: no-repeat;
-            // background-size: contain;
-            background-position: 113% 56px;
+            background-position: 121% 56px;
             position: absolute;
             bottom: 0;
             width: 100%;

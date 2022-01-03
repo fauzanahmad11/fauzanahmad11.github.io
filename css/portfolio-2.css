@@ -105,21 +105,20 @@ body.light::-webkit-scrollbar-thumb {
 }
 
 body.light .navbar-toggler.custome {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: end;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  border: unset;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: end !important;
+      -ms-flex-pack: end !important;
+          justify-content: end !important;
+  -webkit-box-align: end !important;
+      -ms-flex-align: end !important;
+          align-items: end !important;
+  -webkit-box-orient: vertical !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: column !important;
+          flex-direction: column !important;
+  border: unset !important;
 }
 
 body.light .navbar-toggler.custome:focus {
@@ -151,8 +150,6 @@ body.light .navbar-toggler.custome::after {
 }
 
 body.light .navbar-toggler.custome .navbar-toggler-icon-custome-1 {
-  top: 0;
-  right: 0;
   display: block;
   width: 32px;
   height: 3px;
@@ -447,9 +444,9 @@ body.light .section-works-content::before {
 
 body.light .section-works-content::after {
   content: '';
-  background-image: url("../img/light-blue-circle.png");
+  background-image: url("../img/dotsmany.png");
   background-repeat: no-repeat;
-  background-position: 113% 56px;
+  background-position: 121% 56px;
   position: absolute;
   bottom: 0;
   width: 100%;
