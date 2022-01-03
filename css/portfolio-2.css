@@ -1500,6 +1500,18 @@ body.light .tooltip-inner {
     margin-top: 33px;
     bottom: -12px;
   }
+  body.light .section-recent-project-content .recent-project-item {
+    -webkit-box-shadow: unset;
+            box-shadow: unset;
+  }
+  body.light .section-recent-project-content .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    -webkit-transition: all 200ms linear;
+    transition: all 200ms linear;
+    width: 20px;
+    border-radius: 10px;
+    background: -webkit-gradient(linear, left bottom, left top, from(#fb9433), to(#fdc201));
+    background: linear-gradient(0deg, #fb9433 0%, #fdc201 100%);
+  }
 }
 
 @media screen and (max-width: 1400px) {

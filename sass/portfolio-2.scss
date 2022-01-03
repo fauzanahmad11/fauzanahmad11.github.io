@@ -1313,6 +1313,21 @@ body.light{
                 }
             }
         }
+        .section-recent-project-content{
+            .recent-project-item{
+                box-shadow: unset;
+            }
+            .swiper-pagination{
+                .swiper-pagination-bullet{
+                    &.swiper-pagination-bullet-active{
+                        transition: all 200ms linear;
+                        width: 20px;
+                        border-radius: 10px;
+                        background: $gr-yellow;
+                    }
+                }
+            }
+        }
     } 
     @media screen and (max-width: $xxl) {
         .section-works-content{
