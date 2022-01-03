@@ -25,6 +25,13 @@ $lg : 992px; // >=
 $xl : 1200px; // >=
 $xxl : 1400px; // >=
 
+:root{
+    --fs-head-primary: 2.8rem;
+    --fs-head-secoundary: 2.8rem;
+    --fs-body-primary: 1rem;
+    --fs-body-secoundary: .8rem;
+}
+
 main{
     min-height: 100vh;
 }
