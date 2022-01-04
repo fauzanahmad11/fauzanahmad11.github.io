@@ -1160,9 +1160,6 @@ body.light{
         }
     } 
     @media screen and (max-width: $md) {
-        .navbar-toggler.custome{
-            display: flex;
-        }
         .section-recent-portfolio{
             .carousel-portfolio {
                 &::before{
@@ -1173,6 +1170,9 @@ body.light{
         }
     } 
     @media screen and (max-width: $lg) {
+        .navbar-toggler.custome{
+            display: flex;
+        }
         .navbar .navbar-collapse{
             position: fixed;
             top: 0;

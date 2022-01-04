@@ -1357,11 +1357,6 @@ body.light .tooltip-inner {
 }
 
 @media screen and (max-width: 768px) {
-  body.light .navbar-toggler.custome {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
   body.light .section-recent-portfolio .carousel-portfolio::before {
     top: -14px;
     right: 10px;
@@ -1369,6 +1364,11 @@ body.light .tooltip-inner {
 }
 
 @media screen and (max-width: 992px) {
+  body.light .navbar-toggler.custome {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
   body.light .navbar .navbar-collapse {
     position: fixed;
     top: 0;
