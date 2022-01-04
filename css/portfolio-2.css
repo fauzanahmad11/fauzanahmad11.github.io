@@ -105,20 +105,18 @@ body.light::-webkit-scrollbar-thumb {
 }
 
 body.light .navbar-toggler.custome {
-  display: -webkit-box !important;
-  display: -ms-flexbox !important;
-  display: flex !important;
-  -webkit-box-pack: end !important;
-      -ms-flex-pack: end !important;
-          justify-content: end !important;
-  -webkit-box-align: end !important;
-      -ms-flex-align: end !important;
-          align-items: end !important;
-  -webkit-box-orient: vertical !important;
-  -webkit-box-direction: normal !important;
-      -ms-flex-direction: column !important;
-          flex-direction: column !important;
-  border: unset !important;
+  display: none;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: unset;
 }
 
 body.light .navbar-toggler.custome:focus {
@@ -1359,6 +1357,11 @@ body.light .tooltip-inner {
 }
 
 @media screen and (max-width: 768px) {
+  body.light .navbar-toggler.custome {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
   body.light .section-recent-portfolio .carousel-portfolio::before {
     top: -14px;
     right: 10px;

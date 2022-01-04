@@ -109,11 +109,11 @@ body.light{
         border-radius: .35em;
     }
     .navbar-toggler.custome{
-        display: flex !important;
-        justify-content: end !important;
-        align-items: end !important;
-        flex-direction: column !important;
-        border: unset !important;
+        display: none;
+        justify-content: end;
+        align-items: end;
+        flex-direction: column;
+        border: unset;
         &:focus{
             outline: unset;
             text-decoration: none;
@@ -1160,6 +1160,9 @@ body.light{
         }
     } 
     @media screen and (max-width: $md) {
+        .navbar-toggler.custome{
+            display: flex;
+        }
         .section-recent-portfolio{
             .carousel-portfolio {
                 &::before{
