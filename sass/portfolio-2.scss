@@ -761,6 +761,125 @@ body.light{
             }
         }
     }
+    .section-timeline-journey-content{
+        margin-bottom: 130px;
+        .timeline-head {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 1rem;
+            .head-item {
+            // padding: 0.5rem 0.5rem;
+            margin: 0.5rem;
+            letter-spacing: 1px;
+                .nav-link{
+                    color: $cl-dark-text;
+                    cursor: pointer;
+                    &.active{
+                        color:$cl-blue;
+                        background-color: transparent;
+                    }
+                }
+            }
+        }
+        .timeline-list {
+            width: 100%;
+            position: relative;
+            list-style: none;
+            // background-color: rgba(0, 0, 0, 0.4);
+            &::before {
+            display: inline-block;
+            content: "";
+                position: absolute;
+                top: 0;
+                left: 51.3%;
+                width: 10px;
+                height: 100%;
+                border-left: 3px solid $cl-blue;
+            }
+            &::after {
+                content: "";
+                clear: both;
+                display: block;
+            }
+            .timeline-item {
+            position: relative;
+            width: 50%;
+            &:hover {
+                &:nth-child(even)::before {
+                height: 100%;
+                }
+                &:nth-child(odd)::before {
+                height: 100%;
+                }
+            }
+            &:nth-child(even) {
+                padding-right: 20px;
+                text-align: right;
+                float: left;
+                clear: both;
+                &::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                right: -3px;
+                width: 3px;
+                height: 0;
+                background-image: $gr-yellow;
+                display: inline-block;
+                transition: all 255ms ease-in-out;
+                }
+                &::after {
+                content: "";
+                position: absolute;
+                top: 0;
+                right: -9px;
+                width: 15px;
+                height: 15px;
+                border-radius: 50%;
+                background-image: $gr-yellow;
+                display: inline-block;
+                }
+            }
+            &:nth-child(odd) {
+                float: right;
+                padding-left: 20px;
+                clear: both;
+                &::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 3px;
+                height: 0;
+                background-image: $gr-yellow;
+                display: inline-block;
+                transition: all 255ms ease-in-out;
+                }
+                &::after {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: -6px;
+                width: 15px;
+                height: 15px;
+                border-radius: 50%;
+                background-image: $gr-yellow;
+                display: inline-block;
+                }
+            }
+            &:not(:last-child) {
+                padding-bottom: 1rem;
+            }
+            .location {
+                margin-top: 0.2rem;
+            }
+            .periode {
+                margin-top: 1rem;
+                font-size: 0.8rem;
+            }
+            }
+        }
+    }
     .error-page{
         color: $text-head-primary;
     }

@@ -973,6 +973,151 @@ body.light .section-contact .section-content .form label {
   color: #ffffff;
 }
 
+body.light .section-timeline-journey-content {
+  margin-bottom: 130px;
+}
+
+body.light .section-timeline-journey-content .timeline-head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 1rem;
+}
+
+body.light .section-timeline-journey-content .timeline-head .head-item {
+  margin: 0.5rem;
+  letter-spacing: 1px;
+}
+
+body.light .section-timeline-journey-content .timeline-head .head-item .nav-link {
+  color: #333;
+  cursor: pointer;
+}
+
+body.light .section-timeline-journey-content .timeline-head .head-item .nav-link.active {
+  color: #1081E8;
+  background-color: transparent;
+}
+
+body.light .section-timeline-journey-content .timeline-list {
+  width: 100%;
+  position: relative;
+  list-style: none;
+}
+
+body.light .section-timeline-journey-content .timeline-list::before {
+  display: inline-block;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 51.3%;
+  width: 10px;
+  height: 100%;
+  border-left: 3px solid #1081E8;
+}
+
+body.light .section-timeline-journey-content .timeline-list::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+body.light .section-timeline-journey-content .timeline-list .timeline-item {
+  position: relative;
+  width: 50%;
+}
+
+body.light .section-timeline-journey-content .timeline-list .timeline-item:hover:nth-child(even)::before {
+  height: 100%;
+}
+
+body.light .section-timeline-journey-content .timeline-list .timeline-item:hover:nth-child(odd)::before {
+  height: 100%;
+}
+
+body.light .section-timeline-journey-content .timeline-list .timeline-item:nth-child(even) {
+  padding-right: 20px;
+  text-align: right;
+  float: left;
+  clear: both;
+}
+
+body.light .section-timeline-journey-content .timeline-list .timeline-item:nth-child(even)::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -3px;
+  width: 3px;
+  height: 0;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#fb9433), to(#fdc201));
+  background-image: linear-gradient(0deg, #fb9433 0%, #fdc201 100%);
+  display: inline-block;
+  -webkit-transition: all 255ms ease-in-out;
+  transition: all 255ms ease-in-out;
+}
+
+body.light .section-timeline-journey-content .timeline-list .timeline-item:nth-child(even)::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -9px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#fb9433), to(#fdc201));
+  background-image: linear-gradient(0deg, #fb9433 0%, #fdc201 100%);
+  display: inline-block;
+}
+
+body.light .section-timeline-journey-content .timeline-list .timeline-item:nth-child(odd) {
+  float: right;
+  padding-left: 20px;
+  clear: both;
+}
+
+body.light .section-timeline-journey-content .timeline-list .timeline-item:nth-child(odd)::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3px;
+  height: 0;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#fb9433), to(#fdc201));
+  background-image: linear-gradient(0deg, #fb9433 0%, #fdc201 100%);
+  display: inline-block;
+  -webkit-transition: all 255ms ease-in-out;
+  transition: all 255ms ease-in-out;
+}
+
+body.light .section-timeline-journey-content .timeline-list .timeline-item:nth-child(odd)::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -6px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#fb9433), to(#fdc201));
+  background-image: linear-gradient(0deg, #fb9433 0%, #fdc201 100%);
+  display: inline-block;
+}
+
+body.light .section-timeline-journey-content .timeline-list .timeline-item:not(:last-child) {
+  padding-bottom: 1rem;
+}
+
+body.light .section-timeline-journey-content .timeline-list .timeline-item .location {
+  margin-top: 0.2rem;
+}
+
+body.light .section-timeline-journey-content .timeline-list .timeline-item .periode {
+  margin-top: 1rem;
+  font-size: 0.8rem;
+}
+
 body.light .error-page {
   color: #0F2851;
 }
