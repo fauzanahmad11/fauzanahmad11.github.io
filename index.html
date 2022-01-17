@@ -15,6 +15,8 @@
     <!-- Swiper.js -->
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!-- Link AOS CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- Favicon -->
     <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
 </head>
@@ -105,13 +107,13 @@
     <!-- Section Ability -->
     <section class="section-head section-ability text-end">
         <div class="container">
-            <div class="d-flex flex-row align-items-center">
+            <div class="d-flex flex-row align-items-center" data-aos="fade-right">
                 <span class="devider flex-grow-1 me-2"></span>
                 <h2>Ability and Competency</h2>
             </div>
         </div>
     </section>
-    <section class="section-ability-content">
+    <section class="section-ability-content" data-aos="fade-up">
         <div class="container">
             <div class="row justify-content-center align-items-center">
                 <div class="col-2 list-ability">
@@ -151,7 +153,7 @@
         </div>
     </section>
     <!-- Section About Me -->
-    <section class="section-head section-aboutme text-center" id="aboutme">
+    <section class="section-head section-aboutme text-center" id="aboutme" data-aos="fade-down" data-aos-delay="50">
         <div class="container">
             <h2>About Me</h2>
             <p>Let me introduce myself</p>
@@ -160,10 +162,11 @@
     <section class="section-aboutme-content">
         <div class="container">
             <div class="row justify-content-center align-items-center">
-                <div class="col-7 col-md-5 col-lg-3">
+                <div class="col-7 col-md-5 col-lg-3" data-aos="fade-left" data-aos-delay="125">
                     <img src="img/me.png" alt="hero img" class="img-fluid mb-5 mb-md-0">
                 </div>
-                <div class="col-12 col-md-7 col-lg-6 ps-md-5 text-center text-md-start">
+                <div class="col-12 col-md-7 col-lg-6 ps-md-5 text-center text-md-start" data-aos="fade-right"
+                    data-aos-delay="100">
                     <p>As a UI Designer I have several Experiences including digital designer at a digital marketing
                         company and experience as a private tutor in a learning program to skill up final-year students.
                         Skilled in Creativity, Programming, Design, and Public Speaking. Have an interesting skill as a
@@ -190,14 +193,14 @@
         </div>
     </section>
     <!-- Section How It Works -->
-    <section class="section-head section-works text-center">
+    <section class="section-head section-works text-center" data-aos="fade-down">
         <div class="container">
             <h2>How This Works ?</h2>
             <p>How I do my work with professional steps, Including managing all of my work.<br>In this section, I will
                 explain my work as UI Designer</p>
         </div>
     </section>
-    <section class="section-works-content">
+    <section class="section-works-content" data-aos="fade-up">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-10 col-md-7">
@@ -231,7 +234,7 @@
         </div>
     </section>
     <!-- Section Service -->
-    <section class="section-head section-service text-center" id="service">
+    <section class="section-head section-service text-center" id="service" data-aos="fade-down">
         <div class="container">
             <h2>Amazing Services</h2>
             <p>Services are very important for me. Because many things can happen and <br> with good services, I
@@ -241,7 +244,7 @@
     <section class="section-service-content">
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-12 col-md-6 col-lg-4">
+                <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="50">
                     <div class="card service-item">
                         <div class="service-img">
                             <img src="img/icon/ic_design.png" alt="design-service" class="img-fluid">
@@ -253,7 +256,7 @@
                             handle.</p>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-4">
+                <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
                     <div class="card service-item">
                         <div class="service-img">
                             <img src="img/icon/id_creative.png" alt="creative-service" class="img-fluid">
@@ -266,7 +269,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-4">
+                <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
                     <div class="card service-item">
                         <div class="service-img">
                             <img src="img/icon/ic-webdev-elipse.png" alt="webdev-service" class="img-fluid">
@@ -282,13 +285,13 @@
         </div>
     </section>
     <!-- Section Timeline Journey -->
-    <section class="section-head section-timeline-journey text-center" id="journey">
+    <section class="section-head section-timeline-journey text-center" id="journey" data-aos="fade-down">
         <div class="container">
             <h2>My Personal Journey</h2>
             <p>My working and studying journey include formal and informal</p>
         </div>
     </section>
-    <section class="section-timeline-journey-content">
+    <section class="section-timeline-journey-content" data-aos="fade-top">
         <div class="container">
             <div class="d-flex justify-content-center flex-column">
                 <ul class="nav nav-pills timeline-head" id="pills-tab" role="tablist">
@@ -352,7 +355,7 @@
         </div>
     </section>
     <!-- Section recent Project -->
-    <section class="section-head section-recent-project text-center" id="portfolio">
+    <section class="section-head section-recent-project text-center" id="portfolio" data-aos="fade-down">
         <div class="container">
             <h2>Portfolio</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint voluptatem, <br>beatae ad molestias minima
@@ -363,7 +366,7 @@
         <div class="text-center">
             <div class="swiper swiper-portfolio p-0 px-lg-3 py-5">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide">
+                    <div class="swiper-slide" data-aos="fade-up" data-aos-delay="50">
                         <div class="card recent-project-item my-3"
                             style="background-image: url('img/banner/Youtube.jpg');">
                             <div class="card-body">
@@ -378,7 +381,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-slide">
+                    <div class="swiper-slide" data-aos="fade-up" data-aos-delay="100">
                         <div class="card recent-project-item my-3"
                             style="background-image: url('img/banner/reactjs-ecommerce.jpg');">
                             <div class="card-body">
@@ -401,7 +404,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-slide">
+                    <div class="swiper-slide" data-aos="fade-up" data-aos-delay="150">
                         <div class="card recent-project-item my-3"
                             style="background-image: url('img/banner/Dashboard-design.jpg');">
                             <div class="card-body">
@@ -424,7 +427,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-slide">
+                    <div class="swiper-slide" data-aos="fade-up" data-aos-delay="200">
                         <div class="card recent-project-item my-3"
                             style="background-image: url('img/banner/login-page-design.jpg');">
                             <div class="card-body">
@@ -447,7 +450,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-slide">
+                    <div class="swiper-slide" data-aos="fade-up" data-aos-delay="250">
                         <div class="card recent-project-item my-3"
                             style="background-image: url('img/banner/Onlineshop-Website.jpg');">
                             <div class="card-body">
@@ -470,7 +473,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-slide">
+                    <div class="swiper-slide" data-aos="fade-up" data-aos-delay="50">
                         <div class="card recent-project-item my-3"
                             style="background-image: url('img/banner/blogs-laravel.jpg');">
                             <div class="card-body">
@@ -495,7 +498,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-slide">
+                    <div class="swiper-slide" data-aos="fade-up" data-aos-delay="100">
                         <div class="card recent-project-item my-3"
                             style="background-image: url(https://cdn.dribbble.com/users/4952119/screenshots/15023230/media/df819ed590bfba99fb6defec49ea2f25.png);">
                             <div class="card-body">
@@ -521,7 +524,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-slide">
+                    <div class="swiper-slide" data-aos="fade-up" data-aos-delay="150">
                         <div class="card recent-project-item my-3"
                             style="background-image: url('img/banner/olshop-IG.jpg');">
                             <div class="card-body">
@@ -536,7 +539,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-slide">
+                    <div class="swiper-slide" data-aos="fade-up" data-aos-delay="200">
                         <div class="card recent-project-item my-3"
                             style="background-image: url('img/banner/zdesign.jpg');">
                             <div class="card-body">
@@ -551,7 +554,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-slide">
+                    <div class="swiper-slide" data-aos="fade-up" data-aos-delay="250">
                         <div class="card recent-project-item my-3"
                             style="background-image: url('img/banner/zanzancode.jpg');">
                             <div class="card-body">
@@ -566,7 +569,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-slide">
+                    <div class="swiper-slide" data-aos="fade-up" data-aos-delay="50">
                         <div class="card recent-project-item my-3"
                             style="background-image: url('img/banner/github.jpg');">
                             <div class="card-body">
@@ -581,7 +584,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-slide">
+                    <div class="swiper-slide" data-aos="fade-up" data-aos-delay="100">
                         <div class="card recent-project-item my-3"
                             style="background-image: url('img/banner/Dribbble.jpg');">
                             <div class="card-body">
@@ -596,7 +599,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-slide">
+                    <div class="swiper-slide" data-aos="fade-up" data-aos-delay="150">
                         <div class="card recent-project-item my-3"
                             style="background-image: url('img/banner/codepen.jpg');">
                             <div class="card-body">
@@ -622,7 +625,7 @@
     <section class="section-head section-previous-portfolio">
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-12 col-md-4 align-self-center text-center text-md-start">
+                <div class="col-12 col-md-4 align-self-center text-center text-md-start" data-aos="fade-up">
                     <h2>Previous Portfolio Design</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint voluptatem, <br>beatae ad molestias
                         minima
@@ -631,7 +634,7 @@
                         <a href="#" class="btn btn-gr-blue">Visit Site</a>
                     </div>
                 </div>
-                <div class="col-12 col-md-4 align-self-center text-center text-md-start">
+                <div class="col-12 col-md-4 align-self-center text-center text-md-start" data-aos="fade-down">
                     <img src="img/phone.png" alt="phone" class="img-fluid pre-portfolio mt-4" draggable="false">
                     <div class="d-block d-md-none mt-5">
                         <a href="#" class="btn btn-gr-blue">Visit Site</a>
@@ -641,7 +644,7 @@
         </div>
     </section>
     <!-- section-contact -->
-    <section class="section-contact" id="contactme"
+    <section data-aos="fade-up" class="section-contact" id="contactme"
         style="background-image: linear-gradient(rgba(15, 40, 81, 0.85) 0%, rgba(15, 40, 81, 1) 100%),url(https://images.unsplash.com/photo-1503431153573-96e959f4d9b7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80);">
         <div class="section-head">
             <div class="container text-center">
@@ -781,10 +784,15 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/js/all.min.js"
         integrity="sha512-cyAbuGborsD25bhT/uz++wPqrh5cqPh1ULJz4NSpN9ktWcA6Hnh9g+CWKeNx2R0fgQt+ybRXdabSBgYXkQTTmA=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <!-- Swiper.js -->
-
     <!-- Swiper JS -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true,
+        });
+    </script>
 
     <!-- Initialize Swiper -->
     <script>
