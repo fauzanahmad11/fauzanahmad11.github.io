@@ -1032,10 +1032,23 @@ body.light .section-timeline-journey-content .timeline-head .head-item .nav-link
   background-color: transparent;
 }
 
+body.light .section-timeline-journey-content .tab-pane.fade.show.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 body.light .section-timeline-journey-content .timeline-list {
   width: 100%;
   position: relative;
   list-style: none;
+  padding-left: 0;
 }
 
 body.light .section-timeline-journey-content .timeline-list::before {
@@ -1043,7 +1056,7 @@ body.light .section-timeline-journey-content .timeline-list::before {
   content: "";
   position: absolute;
   top: 0;
-  left: 51.3%;
+  left: 50%;
   width: 10px;
   height: 100%;
   border-left: 3px solid #1081E8;
@@ -1160,9 +1173,13 @@ body.light .scroll-to-top {
           box-shadow: none !important;
   background-color: rgba(0, 0, 0, 0.5);
   color: #ffffff;
+  width: 50px;
+  height: 50px;
   bottom: 20px;
   right: 20px;
+  border-radius: 50%;
   position: fixed;
+  z-index: 9;
 }
 
 body.light .scroll-to-top:active, body.light .scroll-to-top:focus {
@@ -1539,6 +1556,9 @@ body.light .tooltip-inner {
 }
 
 @media screen and (max-width: 992px) {
+  body.light .section-timeline-journey-content .timeline-list::before {
+    left: 50%;
+  }
   body.light .navbar-toggler.custome {
     display: -webkit-box;
     display: -ms-flexbox;
