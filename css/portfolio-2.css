@@ -5,6 +5,8 @@
   --fs-head-secoundary: 2.8rem;
   --fs-body-primary: 1rem;
   --fs-body-secoundary: .8rem;
+  --gr-main: linear-gradient(180deg, #006ACA 0%, #1081E8 100%);
+  --bs-navbar-main:0 3px 20px rgba(0, 0, 0, .3);
 }
 
 main {
@@ -1729,6 +1731,19 @@ body.light .tooltip-inner {
   }
   body.light .section-works-content .macbook-img-preview .swiper-pagination {
     bottom: -40px;
+  }
+}
+
+@media (min-width: 992px) {
+  body.light .main-header .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    padding: 2rem 0;
+    -webkit-transition: all 155ms ease-in-out;
+    transition: all 155ms ease-in-out;
   }
 }
 

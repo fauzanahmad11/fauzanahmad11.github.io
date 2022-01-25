@@ -1,7 +1,25 @@
 // When the user scrolls down 20px from the top of the document, show the button
 
+const screenLg = window.matchMedia('(min-width:992px)');
+
 window.onscroll = function () {
     scrollFunction();
+    if (screenLg.matches) {
+        navbarOnScroll();
+    }
+};
+
+const navbarOnScroll = () => {
+    const navbar = document.querySelector(".main-header .navbar");
+    const body = document.body.scrollTop;
+    const docElement = document.documentElement.scrollTop;
+    if (body > 80 || docElement) {
+        navbar.style.background = "var(--gr-main)";
+        navbar.style.boxShadow = "var(--bs-navbar-main)";
+    } else {
+        navbar.style.background = "transparent";
+        navbar.style.boxShadow = "unset";
+    }
 };
 
 function scrollFunction() {
