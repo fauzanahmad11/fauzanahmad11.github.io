@@ -962,6 +962,7 @@ body.light{
             display: flex;
             justify-content: center;
             align-items: center;
+            transform: translateY(-5em);
             .circle {
                 width: 40px;
                 height: 40px;
@@ -984,6 +985,7 @@ body.light{
             justify-content: center;
             align-items: center;
             box-shadow:unset !important;
+            transform: translateY(-5em);
             .shape-shadow {
                 width: 40px;
                 height: 18px;

@@ -1232,6 +1232,8 @@ body.light .pre-loader .shape {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transform: translateY(-5em);
+          transform: translateY(-5em);
 }
 
 body.light .pre-loader .shape .circle {
@@ -1267,6 +1269,8 @@ body.light .pre-loader .shadow {
           align-items: center;
   -webkit-box-shadow: unset !important;
           box-shadow: unset !important;
+  -webkit-transform: translateY(-5em);
+          transform: translateY(-5em);
 }
 
 body.light .pre-loader .shadow .shape-shadow {
