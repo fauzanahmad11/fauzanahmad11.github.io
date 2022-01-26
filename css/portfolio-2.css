@@ -1207,7 +1207,7 @@ body.light .pre-loader {
           align-items: center;
   background-color: #fff;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -1215,7 +1215,11 @@ body.light .pre-loader {
   position: fixed;
   top: 0;
   left: 0;
+  right: 0;
+  bottom: 0;
   z-index: 100;
+  -webkit-transition: all 255ms ease-in-out;
+  transition: all 255ms ease-in-out;
 }
 
 body.light .pre-loader .shape {
@@ -1231,8 +1235,8 @@ body.light .pre-loader .shape {
 }
 
 body.light .pre-loader .shape .circle {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   background-color: #fdb113;
   border-radius: 50%;
   margin: 0 1rem;
@@ -1266,7 +1270,7 @@ body.light .pre-loader .shadow {
 }
 
 body.light .pre-loader .shadow .shape-shadow {
-  width: 50px;
+  width: 40px;
   height: 18px;
   background-color: rgba(0, 0, 0, 0.1);
   border-radius: 50%;

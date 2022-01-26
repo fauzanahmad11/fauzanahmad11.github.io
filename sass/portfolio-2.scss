@@ -949,19 +949,22 @@ body.light{
         align-items: center;
         background-color: #fff;
         width: 100%;
-        height: 100vh;
+        height: 100%;
         flex-direction: column;
         position: fixed;
         top: 0;
         left: 0;
+        right: 0;
+        bottom: 0;
         z-index: 100;
+        transition: all 255ms ease-in-out;
         .shape {
             display: flex;
             justify-content: center;
             align-items: center;
             .circle {
-                width: 50px;
-                height: 50px;
+                width: 40px;
+                height: 40px;
                 background-color: #fdb113;
                 border-radius: 50%;
                 margin: 0 1rem;
@@ -982,7 +985,7 @@ body.light{
             align-items: center;
             box-shadow:unset !important;
             .shape-shadow {
-                width: 50px;
+                width: 40px;
                 height: 18px;
                 background-color: rgba(0, 0, 0, 0.1);
                 border-radius: 50%;

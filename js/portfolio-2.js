@@ -9,9 +9,9 @@ window.onscroll = function () {
         navbarOnScroll();
     }
 };
-window.onload = function () {
-    preLoader();
-};
+// window.onload = function () {
+//     preLoader();
+// };
 
 const preLoader = () => {
     const loader = document.querySelector(".pre-loader");
