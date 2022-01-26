@@ -1273,6 +1273,10 @@ body.light .pre-loader .shadow .shape-shadow {
   margin: 0 1rem;
   -webkit-animation: bounceShadow 0.6s linear infinite;
           animation: bounceShadow 0.6s linear infinite;
+  -webkit-transform: translateY(5em) scale(0.5);
+          transform: translateY(5em) scale(0.5);
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
 }
 
 body.light .pre-loader .shadow .shape-shadow:nth-child(2) {
