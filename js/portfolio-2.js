@@ -1,13 +1,22 @@
 // When the user scrolls down 20px from the top of the document, show the button
 
-const screenLg = window.matchMedia('(min-width:992px)');
+const screenMinLg = window.matchMedia('(min-width:992px)');
+const screenMaxLg = window.matchMedia('(min-width:992px)');
 
 window.onscroll = function () {
     scrollFunction();
-    if (screenLg.matches) {
+    if (screenMinLg.matches) {
         navbarOnScroll();
     }
 };
+window.onload = function () {
+    preLoader();
+};
+
+const preLoader = () => {
+    const loader = document.querySelector(".pre-loader");
+    loader.style.display = "none";
+}
 
 const navbarOnScroll = () => {
     const navbar = document.querySelector(".main-header .navbar");

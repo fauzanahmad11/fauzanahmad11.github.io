@@ -1195,6 +1195,96 @@ body.light .scroll-to-top:hover {
   color: #FCBC08;
 }
 
+body.light .pre-loader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #fff;
+  width: 100%;
+  height: 100vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+body.light .pre-loader .shape {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body.light .pre-loader .shape .circle {
+  width: 50px;
+  height: 50px;
+  background-color: #fdb113;
+  border-radius: 50%;
+  margin: 0 1rem;
+  -webkit-animation: bounce 0.6s linear infinite;
+          animation: bounce 0.6s linear infinite;
+}
+
+body.light .pre-loader .shape .circle:nth-child(2) {
+  background-color: #006aca;
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
+}
+
+body.light .pre-loader .shape .circle:nth-child(3) {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+
+body.light .pre-loader .shadow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: unset !important;
+          box-shadow: unset !important;
+}
+
+body.light .pre-loader .shadow .shape-shadow {
+  width: 50px;
+  height: 18px;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  margin: 0 1rem;
+  -webkit-animation: bounceShadow 0.6s linear infinite;
+          animation: bounceShadow 0.6s linear infinite;
+}
+
+body.light .pre-loader .shadow .shape-shadow:nth-child(2) {
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
+}
+
+body.light .pre-loader .shadow .shape-shadow:nth-child(3) {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+
 body.light .section-recent-portfolio {
   background-image: url("../img/bg-ability.png");
   background-size: 100% auto;
@@ -1822,6 +1912,110 @@ body.light .tooltip-inner {
   100% {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes bounce {
+  from,
+  to {
+    -webkit-transform: translateY(0) scale(1, 1);
+            transform: translateY(0) scale(1, 1);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  45% {
+    -webkit-transform: translateY(5em) scale(1, 1);
+            transform: translateY(5em) scale(1, 1);
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+  }
+  50% {
+    -webkit-transform: translateY(5em) scale(1.5, 0.5);
+            transform: translateY(5em) scale(1.5, 0.5);
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+  }
+  55% {
+    -webkit-transform: translateY(5em) scale(1, 1);
+            transform: translateY(5em) scale(1, 1);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+}
+
+@keyframes bounce {
+  from,
+  to {
+    -webkit-transform: translateY(0) scale(1, 1);
+            transform: translateY(0) scale(1, 1);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  45% {
+    -webkit-transform: translateY(5em) scale(1, 1);
+            transform: translateY(5em) scale(1, 1);
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+  }
+  50% {
+    -webkit-transform: translateY(5em) scale(1.5, 0.5);
+            transform: translateY(5em) scale(1.5, 0.5);
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+  }
+  55% {
+    -webkit-transform: translateY(5em) scale(1, 1);
+            transform: translateY(5em) scale(1, 1);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+}
+
+@-webkit-keyframes bounceShadow {
+  from,
+  to {
+    -webkit-transform: translateY(5em) scale(0.5);
+            transform: translateY(5em) scale(0.5);
+    -webkit-filter: blur(5px);
+            filter: blur(5px);
+  }
+  45% {
+    -webkit-transform: translateY(5em) scale(0.5);
+            transform: translateY(5em) scale(0.5);
+  }
+  50% {
+    -webkit-box-shadow: 20px 0 5px rgba(0, 0, 0, 0.1), -20px 0 5px rgba(0, 0, 0, 0.1);
+            box-shadow: 20px 0 5px rgba(0, 0, 0, 0.1), -20px 0 5px rgba(0, 0, 0, 0.1);
+  }
+  100% {
+    -webkit-transform: translateY(5em) scale(0.5);
+            transform: translateY(5em) scale(0.5);
+    -webkit-box-shadow: unset;
+            box-shadow: unset;
+  }
+}
+
+@keyframes bounceShadow {
+  from,
+  to {
+    -webkit-transform: translateY(5em) scale(0.5);
+            transform: translateY(5em) scale(0.5);
+    -webkit-filter: blur(5px);
+            filter: blur(5px);
+  }
+  45% {
+    -webkit-transform: translateY(5em) scale(0.5);
+            transform: translateY(5em) scale(0.5);
+  }
+  50% {
+    -webkit-box-shadow: 20px 0 5px rgba(0, 0, 0, 0.1), -20px 0 5px rgba(0, 0, 0, 0.1);
+            box-shadow: 20px 0 5px rgba(0, 0, 0, 0.1), -20px 0 5px rgba(0, 0, 0, 0.1);
+  }
+  100% {
+    -webkit-transform: translateY(5em) scale(0.5);
+            transform: translateY(5em) scale(0.5);
+    -webkit-box-shadow: unset;
+            box-shadow: unset;
   }
 }
 /*# sourceMappingURL=portfolio-2.css.map */
