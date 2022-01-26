@@ -1838,7 +1838,7 @@ body.light .tooltip-inner {
     top: 0;
     left: 0;
     right: 0;
-    z-index: 10;
+    z-index: 90;
     padding: 2rem 0;
     -webkit-transition: all 155ms ease-in-out;
     transition: all 155ms ease-in-out;
